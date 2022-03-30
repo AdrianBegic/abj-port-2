@@ -5,7 +5,6 @@
 
 <script>
 import footerBar from './components/footerBar.vue'
-
 export default {
   components: {
     footerBar
@@ -15,8 +14,8 @@ export default {
 
 <style>
 @font-face {
-    font-family: 'Windows'; /*a name to be used later*/
-    src: url('./assets/MS Sans Serif 8pt.ttf'); /*URL to font*/
+    font-family: 'Windows';
+    src: url('./assets/MS Sans Serif 8pt.ttf');
 }
 
 *{
@@ -26,5 +25,11 @@ export default {
 body{
   margin: 0;
   padding: 0;
+}
+
+.home {
+  background-color: #008080;
+  width: 100%;
+  height: 100vh;
 }
 </style>

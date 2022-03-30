@@ -2,14 +2,16 @@
 <template>
   <div class="footer">
     <div class="start">
+    <router-link  style="text-decoration: none; color: inherit;" to="/">
       <img id="start-button" src="../assets/images/start.webp" />
+       </router-link>
     </div>
     <div class="vl"></div>
     <div class="vl2"></div>
     <div class="about">
-    <router-link  style="text-decoration: none; color: inherit;" to="">
+    <router-link  style="text-decoration: none; color: inherit;" to="/About">
       <img id="about-image" src="../assets/images/address_book_user.png" />
-      <h2 class="about-text">ABOUT</h2>
+      <h2 class="about-text">About me</h2>
     </router-link>
     </div>
     <div class="clock">

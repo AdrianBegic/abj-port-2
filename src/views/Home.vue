@@ -1,22 +1,22 @@
 <template>
   <div class="home">
+    <background />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-/* eslint-disable vue/no-unused-components */
+/* eslint-disable */
+import background from "../components/background.vue"
 
 export default {
   name: 'Home',
   components: {
-  }
+    background
+  },
 }
 </script>
 
 <style>
-.home {
-  background-color: #008080;
-  width: 100%;
-  height: 100vh;
-}
+
 </style>
