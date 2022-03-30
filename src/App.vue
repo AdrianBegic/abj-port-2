@@ -1,30 +1,30 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
   <router-view/>
+  <footerBar/>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import footerBar from './components/footerBar.vue'
+
+export default {
+  components: {
+    footerBar
+  }
+}
+</script>
+
+<style>
+@font-face {
+    font-family: 'Windows'; /*a name to be used later*/
+    src: url('./assets/MS Sans Serif 8pt.ttf'); /*URL to font*/
 }
 
-#nav {
-  padding: 30px;
+*{
+  font-family: 'Windows', monospace;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+body{
+  margin: 0;
+  padding: 0;
 }
 </style>
