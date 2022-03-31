@@ -1,6 +1,6 @@
 <template>
   <router-view/>
-  <footerBar/>
+  <footerBar v-if="!$route.meta.hideFooter"/>
 </template>
 
 <script>

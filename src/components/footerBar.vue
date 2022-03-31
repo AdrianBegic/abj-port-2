@@ -14,6 +14,14 @@
       <h2 class="about-text">About me</h2>
     </router-link>
     </div>
+    <div class="about">
+    <router-link  style="text-decoration: none; color: inherit;" to="/About">
+      <img id="about-image" src="../assets/images/computer-5.png" />
+      <h2 class="about-text">My projects</h2>
+    </router-link>
+    </div>
+    <div class="vl"></div>
+    <div class="vl2"></div>
     <div class="clock">
     <img id="time-image" src="../assets/images/calendar-3.png" />
       <h1 class="time">{{time}}</h1>
@@ -45,17 +53,18 @@ export default {
 <style>
 .footer {
   width: 100%;
-  height: 6vh;
+  height: 5vh;
   background-color: #c0c0c0;
   position: absolute;
   bottom: 0;
   border-top: solid 3px #fff;
+  z-index: 1;
 }
 .start {
   float: left;
   width: 100px;
   height: 70%;
-  margin: 5px 5px 0px 5px;
+  margin: 5px 3px 0px 3px;
   border-left: solid 2px #fff;
   border-right: solid 2px #000;
   border-top: solid 2px #fff;
@@ -63,13 +72,17 @@ export default {
 }
 
 #start-button {
-  width: 100%;
+  width: 90%;
   cursor: pointer;
 }
 
+.start:hover{
+        opacity: 0.8;
+      }
+
 .about {
   float: left;
-  width: 180px;
+  width: 150px;
   height: 70%;
   margin: 5px 5px 0px 5px;
   border-left: solid 2px #fff;
@@ -83,10 +96,15 @@ export default {
   height: 100%;
 }
 
+.about:hover{
+        opacity: 0.8;
+      }
+
 .about-text{
+  font-size: 1em;
   margin: 0 auto;
   text-align: center;
-  padding: 7px 0px;
+  padding: 8px 0px;
 }
 
 
@@ -120,7 +138,7 @@ export default {
   text-align: center;
   font-size: 1.5em;
   margin: 0 auto;
-  padding: 7px 0;
+  padding: 5px 0;
   text-transform: uppercase;
 }
 

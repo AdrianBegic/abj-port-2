@@ -18,5 +18,8 @@ export default {
 </script>
 
 <style>
-
+.home{
+  z-index: 1;
+  position: relative;
+}
 </style>
