@@ -2,7 +2,7 @@
 <template>
   <div class="footer">
     <div class="start">
-    <router-link  style="text-decoration: none; color: inherit;" to="/">
+    <router-link  style="text-decoration: none; color: inherit;" to="/Desktop">
       <img id="start-button" src="../assets/images/start.webp" />
        </router-link>
     </div>

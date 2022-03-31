@@ -4,12 +4,13 @@
     <div class="header">
       <p class="header-title">Login</p>
     </div>
-    <img id="logo" src="../assets/images/Windows_98_logo.svg.png">
+    <img id="logo" src="../assets/images/Windows_98_logo.svg.webp">
     <div class="content">
     <div class="option" :style="isSelected ? { 'background-color': '#000080' , 'color': '#fff' } : null" @click="toggleIsSelected">guest</div>
+    <router-link class="option" style="text-decoration:none;color:inherit;" @click="fullscreen" to="/Error">admin</router-link>
     </div>
     <p class="box-title">Select user name</p>
-    <router-link class="header-icon" style="text-decoration:none;color:inherit;text-align:center" to="/Desktop">OK</router-link>
+    <router-link class="header-icon" style="text-decoration:none;color:inherit;text-align:center" :class="{ disabled: isSelected === false }" to="/Desktop">OK</router-link>
 
       <button class="header-icon-2">Cancel</button>
   </div>
@@ -25,11 +26,28 @@ export default {
   },
   data() {
       return {
-          isSelected: false
+          isSelected: false,
+          elem: document.documentElement
       }
   },
+  computed: {
+    disabled() {
+        return this.isSelected === true;
+    }
+},
 
   methods: {
+       fullscreen () {
+      if (this.elem.requestFullscreen) {
+        this.elem.requestFullscreen ();
+      } else if (this.elem.webkitRequestFullscreen) {
+        /* Safari */
+        this.elem.webkitRequestFullscreen ();
+      } else if (this.elem.msRequestFullscreen) {
+        /* IE11 */
+        this.elem.msRequestFullscreen ();
+      }
+    },
     toggleIsSelected () {
     this.isSelected = !this.isSelected
   }
@@ -47,6 +65,10 @@ export default {
 #logo{
     width: 80%;
     margin: 20px;
+}
+
+.disabled {
+    pointer-events: none;
 }
 
 .main {
@@ -91,6 +113,7 @@ export default {
 
 .option{
     padding: 4px;
+    cursor: pointer;
 }
 
 .header {

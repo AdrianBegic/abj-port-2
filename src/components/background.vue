@@ -5,7 +5,7 @@
     <div class="app">
       <router-link
         style="text-decoration: none; color: inherit"
-        to="/Click"
+        to="/Error"
         @click="fullscreen"
       >
         <img

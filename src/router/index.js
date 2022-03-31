@@ -16,8 +16,8 @@ const routes = [
     component: About
   },
   {
-    path: '/click',
-    name: 'Click',
+    path: '/error',
+    name: 'Error',
     component: error,
     meta: {
       hideFooter: true

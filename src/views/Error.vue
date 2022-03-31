@@ -6,14 +6,14 @@
         A fatal exception 0E has occured at 028:C00068F8 in VxD VMM(01)
         000059F8. The current application will be terminated.
       </p>
-      <p>* Press any key to terminate the application.</p>
+      <p>* Press Backspace to terminate the application.</p>
       <p>
         * Press CTRL+ALT+DEL to restart your computer. You will lose any unsaved
         information in all aplications.
       </p>
       <br />
       <p class="continue">
-        Press any key to continue <span class="blink">_</span>
+        Press Backspace to continue <span class="blink">_</span>
       </p>
     </div>
   </div>
@@ -23,23 +23,13 @@
 /* eslint-disable */
 export default {
   name: 'error',
-  created () {
-    window.addEventListener('keypress', (e) => {
-      return this.$router.go(-1);
-      close();
+  mounted () {
+    document.addEventListener('keydown', (event) => {
+        if (event.key == 'Backspace') {
+    return this.$router.go(-1);
+  }   
     })
-  },
-  methods: {
-      close () {
-         if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.webkitExitFullscreen) { /* Safari */
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { /* IE11 */
-    document.msExitFullscreen();
   }
-    }
-  },
 }
 </script>
 
