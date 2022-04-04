@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/abj-port-2/img/npm.a129cfba.webp"
   },
   {
-    "revision": "6241bf084cf3262d1d85a6ae5511d7cd",
+    "revision": "966a10db1eb1cf93877a8633e2e369cf",
     "url": "/abj-port-2/index.html"
   },
   {
