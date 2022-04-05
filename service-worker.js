@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/abj-port-2/precache-manifest.091aaf56c760cdbf967804a5d8b57ba5.js"
+  "/abj-port-2/precache-manifest.0378b1fd902d16d77a4f6ef8c6d7db6e.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "abj-port-2"});
