@@ -1,11 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d685f541d4b9e084d071",
-    "url": "/abj-port-2/css/app.0e13a0ed.css"
+    "revision": "54d50fee5e8905e17f7b",
+    "url": "/abj-port-2/css/app.5ffbb523.css"
   },
   {
     "revision": "2b38b31a60bd6636efeb6e416c0a95ee",
     "url": "/abj-port-2/fonts/MS Sans Serif 8pt.2b38b31a.ttf"
+  },
+  {
+    "revision": "dd9ae36f47dd71893e1f1ce3d7e30ad1",
+    "url": "/abj-port-2/img.ico"
   },
   {
     "revision": "bd256b1fcc78cb6be0057998fe3b2cf6",
@@ -24,12 +28,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/abj-port-2/img/snowflake.d66b6897.webp"
   },
   {
-    "revision": "b9f7482c784d2a7def1697ecc0a6b762",
+    "revision": "c8d570bc246921af87164b4b29ac30c6",
     "url": "/abj-port-2/index.html"
   },
   {
-    "revision": "d685f541d4b9e084d071",
-    "url": "/abj-port-2/js/app.ea106b0b.js"
+    "revision": "54d50fee5e8905e17f7b",
+    "url": "/abj-port-2/js/app.19cfef5c.js"
   },
   {
     "revision": "80aba62b1ae8d4f4e25c",
