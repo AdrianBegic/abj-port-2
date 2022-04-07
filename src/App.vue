@@ -22,6 +22,10 @@ export default {
   font-family: 'Windows', monospace;
 }
 
+html {
+  overflow: hidden;
+}
+
 body{
   margin: 0;
   padding: 0;

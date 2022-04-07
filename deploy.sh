@@ -7,18 +7,16 @@ set -e
 npm run build
 
 # navigate into the build output directory
-cd dist
+
 
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
 
-git add -A
-git commit -m 'deploy'
+git add dist
+git commit -m 'adding dist subtree'
 
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
- git push -f git@github.com:AdrianBegic/abj-port-2.git main:gh-pages
-
-cd -
+ git subtree push --prefix dist origin gh-pages

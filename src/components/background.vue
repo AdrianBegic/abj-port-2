@@ -33,6 +33,24 @@
         <p id="desktop-text">My Github</p>
       </a>
     </div>
+    <div class="app">
+      <a
+        href="http://snowdayestimator.com"
+        style="text-decoration: none; color: inherit"
+      >
+        <img id="desktop-icon-1" src="../assets/images/snowflake.webp" />
+        <p id="desktop-text">Snowday Estimator</p>
+      </a>
+    </div>
+    <div class="app">
+      <a
+        href="https://adrianbegic.github.io/skate-config/"
+        style="text-decoration: none; color: inherit"
+      >
+        <img id="desktop-icon-3" src="../assets/images/skateboard.webp" />
+        <p id="desktop-text">Skateboard Configurator</p>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -91,6 +109,11 @@ export default {
 #desktop-icon-2 {
   padding: 20px 20px 0px 20px;
   width: 50px;
+}
+
+#desktop-icon-3 {
+  padding: 20px 20px 0px 20px;
+  width: 60px;
 }
 
 #desktop-text {
